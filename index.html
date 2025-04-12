@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhi Web Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="fanta.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <a href="">Abhisek Sahoo</a>
+        <nav>
+            <a target="_blank" href="https://github.com/abhisek7154">
+                <i class="fa-brands fa-github"></i>
+            </a>
+             <a target="_blank" href="https://x.com/Abhisek_sahoo_">
+                <i class="fa-brands fa-square-x-twitter"></i>
+            </a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="intro-header">
+                <h1>Hey there! I'm Abhi...</h1>
+                <p>Software Developer</p>
+            </div>
+            <h5 class="intro-description">
+                A electrical engineer by qualification, and a software developer by trade. Based in India,
+                I love anime, going for walks, playing video games, and building all sorts of fun and useful
+                internet applications!
+            </h5>
+            <div class="links-container">
+                <i class="fa-solid link-arrow fa-arrow-right"></i> 
+                <a target="_blank" href="">
+                     Email me
+                </a>
+                <a target="_blank" href="https://github.com/abhisek7154">
+                    GitHub
+                </a>
+                 <a target="_blank" href="https://x.com/Abhisek_sahoo_">
+                    X / Twitter
+                </a>
+            </div>
+            <div id="play-game">
+                <button onclick="playGame()">Play game???</button>
+            </div>
+            <div style="display: none;" class="color-div">
+                <h4>Pick a color</h4>
+                <p style="display: none;">Great... now it's ruined!</p>
+                <input type="color" id="color-picker" onchange="changeColor()" value="#0084ff" />
+                <button style="display: none;" onclick="resetColor()">Reset</button>
+            </div>
+        </section>
+        <section>
+            <h2>Skills</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Area</th>
+                        <th>Technologies</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Frontend Development</td>
+                        <td>HTML | CSS | JavaScript | React | Next.js | Tailwind CSS | GSAP</td>
+                    <tr>
+                        <td>Backend & APIs</td>
+                        <td>Node.js | Express.js | Firebase</td>
+                    </tr>
+                    <tr>
+                        <td>Database & ORM</td>
+                        <td>PostgreSQL | Prisma | MongoDB</td>
+                    </tr>
+                    <tr>
+                        <td>DevOps / Deployment</td>
+                        <td>Docker | NGINX</td>
+                    </tr>
+                    <tr>
+                        <td>Languages & Libraries</td>
+                        <td>Python | Rust | WebRTC</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <h2>Latest Projects</h2>
+            <div class="card-grid">
+                <div class="project-card">
+                    <div>
+                        <p>May 26, 2025</p>
+                        <h4>abhiseksahoo.com</h4>
+                        <div class="tech-list">
+                            <div class="card-button-secondary">
+                                <p>Html/Css</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>Html/Css</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>Html/Css</p>
+                            </div>
+                        </div>
+                        <p>Anime births worlds divine; Japan, the cradle—where gods dream.
+                           Stories shimmer, emotions soar, beauty lives. Creation there feels eternal.
+                        </p>
+                        <div class="project-links">
+                            <a target="_blank" href="/">Link</a>
+                            <a target="_blank" href="/">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="img-div">
+                        <img class="big-img" src="/Web_portfolio/public/construction2.png" alt="abhiseksahoo-thumbnail"/>
+                    </div>
+
+                </div>
+            </div>
+            <div class="card-grid">
+                <div class="project-card">
+                    <div>
+                        <p>May 26, 2025</p>
+                        <h4>abhiseksahoo.com</h4>
+                        <div class="tech-list">
+                            <div class="card-button-secondary">
+                                <p>Html/Css</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>Html/Css</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>Html/Css</p>
+                            </div>
+                        </div>
+                        <p>Anime births worlds divine; Japan, the cradle—where gods dream.
+                           Stories shimmer, emotions soar, beauty lives. Creation there feels eternal.
+                        </p>
+                        <div class="project-links">
+                            <a target="_blank" href="/">Link</a>
+                            <a target="_blank" href="/">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="img-div">
+                        <img class="big-img" src="/Web_portfolio/public/construction.png" alt="abhiseksahoo-thumbnail"/>
+                    </div>
+
+                </div>
+            </div>
+            <div class="card-grid">
+                <div class="project-card">
+                    <div>
+                        <p>May 26, 2025</p>
+                        <h4>abhiseksahoo.com</h4>
+                        <div class="tech-list">
+                            <div class="card-button-secondary">
+                                <p>Html/Css</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>Html/Css</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>Html/Css</p>
+                            </div>
+                        </div>
+                        <p>Anime births worlds divine; Japan, the cradle—where gods dream.
+                           Stories shimmer, emotions soar, beauty lives. Creation there feels eternal.
+                        </p>
+                        <div class="project-links">
+                            <a target="_blank" href="/">Link</a>
+                            <a target="_blank" href="/">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="img-div">
+                        <img class="big-img" src="/Web_portfolio/public/construction2.png" alt="abhiseksahoo-thumbnail"/>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>By <a>Abhisek sahoo</a>⭐ thr repo on <a target="_blank" href="">GitHub</a></p>
+    </footer>
+    <script>
+        // This is where we create the interactivity for collor switching game 
+
+        // 1. Select all the html components so we can later manupulate them
+        const body = document.querySelector('body')
+        const colorInput = document.getElementById('color-picker')
+        const colorDiv = document.querySelector('.color-div')
+        const hiddenText = document.querySelector('.color-div p')
+        const resetBtn = document.querySelector('.color-div button')
+        const playBtn = document.getElementById('play-game')
+
+        // 2. create the function
+
+        function playGame() {
+            // this function enables you to play the game by showing the
+            // color selecter input
+            colorDiv.style.display = 'block'
+            playBtn.style.display = 'none'
+        }
+
+        function changeColor(){
+            // take the users selected color on the input , and assign it
+            // to be the background color of the webside
+            const selectedColor = colorInput.value
+            body.style.background = selectedColor
+            resetBtn.style.display = 'block'
+            hiddenText.style.display = 'block'
+            colorInput.style.display = 'none'
+        }
+
+        function resetColor() {
+            body.style.background = 'white'
+            colorInput.style.display = 'block'
+            playBtn.style.display = 'block'
+
+            hiddenText.style.display = 'none'
+            resetBtn.style.display = 'none'
+            colorDiv.style.display = 'none'
+        }
+
+        // 3.Is to assign the functions to the buttons by adding them function call 
+        // to the actual element ( done in the html code )
+    </script>
+</body>
+</html>
