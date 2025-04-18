@@ -63,8 +63,7 @@
     --text-selection: '';
 }
 
-/* @media (prefers-color-scheme: dark) {
-    :root {
+   .darkmode{
         --background-primary: #05070f;
         --background-secondary: #0e101e;
         --background-tertiary: #121424;
@@ -110,7 +109,6 @@
 
         --text-selection: '';
     }
-} */
 
 * {
     margin: 0;

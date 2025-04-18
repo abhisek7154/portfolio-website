@@ -8,9 +8,12 @@
     <link rel="stylesheet" href="fanta.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
+<body class="darkmode">
+    <div class="star-container"></div>
     <header>
-        
+        <button id="theme-switch">
+
+        </button>
         <a href="">Abhisek Sahoo</a>
         <nav>
             <a target="_blank" href="https://github.com/abhisek7154">
@@ -28,7 +31,7 @@
                 <p>Software Developer</p>
             </div>
             <h5 class="intro-description">
-                A electrical engineer by qualification, and a software developer by trade. Based in India,
+                An electrical engineer by qualification, and a software developer by trade. Based in India,
                 I love anime, going for walks, playing video games, and building all sorts of fun and useful
                 internet applications!
             </h5>
@@ -84,7 +87,7 @@
                         <td>Python | Rust | WebRTC</td>
                     </tr>
                 </tbody>
-            </table>
+            </table>                       
         </section>
         <section>
             <h2>Latest Projects</h2>
@@ -252,6 +255,35 @@
              stagger: 0.3,
              ease: "power2.out"
         });
+        // Star animation
+    const starContainer = document.querySelector('.star-container');
+    
+    for (let i = 0; i < 100; i++) {
+    const star = document.createElement('div');
+    star.classList.add('star');
+
+    const size = Math.random() * 2 + 1;
+    const posX = Math.random() * window.innerWidth;
+    const posY = Math.random() * window.innerHeight;
+    const delay = Math.random() * 5;
+    const duration = Math.random() * 2 + 1;
+
+    star.style.width = `${size}px`;
+    star.style.height = `${size}px`;
+    star.style.top = `${posY}px`;
+    star.style.left = `${posX}px`;
+
+    starContainer.appendChild(star);
+    
+    gsap.to(star, {
+    opacity: Math.random(),
+    duration: duration,
+    yoyo: true,
+    repeat: -1,
+    ease: "power1.inOut",
+    delay: delay
+    });
+}
     </script>
 </body>
 </html>
