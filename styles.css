@@ -72,6 +72,10 @@ section {
     gap: 2rem;
 }
 
+.big-img{
+    border: 2px solid #555;
+}
+
 .project-card {
     display: flex;
     flex-direction: column;
@@ -110,42 +114,7 @@ section {
 html {
     scroll-behavior: smooth;
   }
-/*
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    border-radius: 16px;
-    overflow: hidden;
-    backdrop-filter: blur(10px);
-    background: rgba(255, 255, 255, 0.05);
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
-    color: #fff;
-    margin: 2rem 0;
-    font-family: 'Segoe UI', sans-serif;
-  }
-  
- thead {
-    background: rgba(255, 255, 255, 0.1);
-    color: #fff;
-  }
-  
-  th, td {
-    padding: 1rem;
-    text-align: left;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  }
-  
-  tbody tr:hover {
-    background: rgba(255, 255, 255, 0.1);
-    transition: background 0.3s ease;
-  }
-  
-  th {
-    font-size: 1rem;
-    font-weight: 700;
-    text-shadow: 0 0 6px rgba(255, 255, 255, 0.2);
-  } */
-  
+
   .star-container 
   {
       position: fixed;
